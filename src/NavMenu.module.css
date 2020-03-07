@@ -2,4 +2,28 @@
     width: 360px;
     display: flex;
     justify-content: space-between;
+
 }
+
+.link {
+    font-family: "Exo 2";
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: #232323;
+}
+
+@media screen and (max-width: 1102px ) {
+    .navMenu {
+        width: 500px;
+    }
+    .link {
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+

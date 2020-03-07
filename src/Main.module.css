@@ -1,16 +1,17 @@
 .main {
     min-height: 100vh;
-    background-color: #ffc5bf;
+    background-color: #232323;
     display: flex;
     justify-content: center;
+    padding: 100px 0;
 }
 
 .container {
     width: 80%;
-    border: 1px solid;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .greeting {
@@ -18,8 +19,78 @@
     flex-direction: column;
 }
 
+.greeting span:nth-child(1) {
+    font-size: 16px;
+
+
+}
+
+.greeting span:nth-child(2),
+.greeting span:nth-child(2) span{
+    font-size: 50px;
+    font-weight: 700;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-family: 'Exo 2' ;
+    position: relative;
+    z-index: 0;
+}
+
+.greeting span:nth-child(2) span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #ffb4ce;
+    bottom: 0px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 619px ) {
+    .greeting span:nth-child(2) span:before {
+        width: 253px;
+        right: 3px;
+    }
+}
+
+h1 {
+    font-size: 27px;
+}
+
 .photo {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.image {
     height: 400px;
     width: 300px;
-    background-color: #f5e991;
+    background-color: grey;
+}
+
+.photo:before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 300px;
+    border: 5px solid #ffb4ce;
+    left: 7px;
+    top: -15px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 360px ) {
+    .image {
+        height: 385px;
+        width: 285px;
+    }
+}
+
+@media screen and (max-width: 360px ) {
+    .photo:before {
+        height: 405px;
+        width: 285px;
+    }
 }

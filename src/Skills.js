@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './Skills.module.css';
 import Skill from "./Skill";
+import Titles from "./Titles";
 
 function Skills() {
     return (
         <div className={styles.skills}>
             <div className={styles.container}>
-                <div className={styles.skillsTitle}>
-                    <h2>Мои навыки</h2>
-                </div>
+                <Titles title="Мои навыки"/>
                 <div className={styles.MySkills}>
                     <Skill image src=" " title="React" description="text"/>
                     <Skill image src=" " title="Redux" description="text"/>

@@ -1,7 +1,5 @@
 .skill {
-    height: 300px;
     width: 300px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +11,38 @@
     align-items: center;
 }
 
+.title {
+    font-family: "Exo 2";
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 20px;
+
+
+}
+
 .skillDescription {
     display: flex;
     align-items: center;
+    font-family: "Exo 2";
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .image {
     height: 200px;
     width: 200px;
-    background-color: #a32aff;
+
+}
+
+@media screen and (max-width: 380px ) {
+    .skill {
+        width: 100%;
+    }
+    .image {
+        height: 150px;
+        width: 150px;
+    }
 }

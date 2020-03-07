@@ -1,14 +1,21 @@
 .header {
     height: 70px;
-    background-color: #4fcfff;
+    background-color: #ffb4ce;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 .container {
     width: 80%;
-    border: 1px solid;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+@media screen and (max-width: 1102px ) {
+    .container {
+        justify-content: center;
+    }
+}

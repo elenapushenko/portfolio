@@ -1,0 +1,12 @@
+.button {
+    width: 120px;
+    height: 40px;
+    background: #ffb4ce;
+    color: black;
+    border: solid 2px #ffb4ce;
+    border-radius: 3px;
+    font-family: "Exo 2";
+    line-height: 1.2;
+    font-weight: 400;
+
+}

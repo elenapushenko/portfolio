@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import Project from "./Project";
-import Skill from "./Skill";
+import Titles from "./Titles";
 
 function Projects() {
   return (
     <div className={styles.projects}>
       <div className={styles.container}>
-          <div className={styles.projectsTitle}>
-              <h2>Мои работы</h2>
-          </div>
+          <Titles title="Мои работы"/>
           <div className={styles.myProjects}>
+              <Project image src=" " title="Project" description="text"/>
               <Project image src=" " title="Project" description="text"/>
               <Project image src=" " title="Project" description="text"/>
           </div>

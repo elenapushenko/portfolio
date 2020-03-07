@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Project.module.css';
+import Buttons from "./Buttons";
 
 function Project(props) {
     return (
@@ -9,12 +10,12 @@ function Project(props) {
                 <img src={props.image} alt=""/>
                 </div>
                 <div className={styles.button}>
-                    <button>смотреть</button>
+                   <Buttons buttons="смотреть"/>
                 </div>
             </div>
-            <span>
+            <div className={styles.projectTitle}>
             <h3>{props.title}</h3>
-        </span>
+        </div>
             <div className={styles.projectDescription}>
                 {props.description}
             </div>
